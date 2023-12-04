@@ -6,17 +6,8 @@
 
 <ion-content [fullscreen]="true">
   <ion-list>
-    <ion-item>
-      <ion-label>Mehl</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Zucker</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Hefe</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Vanille</ion-label>
+    <ion-item *ngFor="let item of shoppingList">
+      <ion-label>{{ item }}</ion-label>
     </ion-item>
   </ion-list>
 

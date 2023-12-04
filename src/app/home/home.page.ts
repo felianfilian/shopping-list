@@ -12,7 +12,14 @@ import { DataService, Message } from '../services/data.service';
 export class HomePage {
   shoppingList = ['Milch', 'Eier', 'Zimt'];
 
-  public alertButtons = [{ text: 'Hinzufügen' }];
+  public alertButtons = [
+    {
+      text: 'Hinzufügen',
+      handler: () => {
+        this.shoppingList.push('sword');
+      },
+    },
+  ];
   public alertInputs = [
     {
       placeholder: 'Artikel (max 30 Zeichen)',

@@ -9,17 +9,4 @@ import { DataService, Message } from '../services/data.service';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
-  private data = inject(DataService);
-  constructor() {}
-
-  refresh(ev: any) {
-    setTimeout(() => {
-      (ev as RefresherCustomEvent).detail.complete();
-    }, 3000);
-  }
-
-  getMessages(): Message[] {
-    return this.data.getMessages();
-  }
-}
+export class HomePage {}

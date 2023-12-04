@@ -11,4 +11,8 @@ import { DataService, Message } from '../services/data.service';
 })
 export class HomePage {
   shoppingList = ['Milch', 'Eier', 'Zimt'];
+
+  addItem() {
+    this.shoppingList.push('Sword');
+  }
 }

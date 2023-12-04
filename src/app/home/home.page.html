@@ -11,7 +11,14 @@
     </ion-item>
   </ion-list>
 
-  <ion-fab-button class="addButton" (click)="addItem()">
+  <ion-fab-button id="present-alert" class="addButton">
     <ion-icon name="add"></ion-icon>
   </ion-fab-button>
+
+  <ion-alert
+    trigger="present-alert"
+    header="Artikel eingeben"
+    [buttons]="alertButtons"
+    [inputs]="alertInputs"
+  ></ion-alert>
 </ion-content>

@@ -15,8 +15,8 @@ export class HomePage {
   public alertButtons = [
     {
       text: 'Hinzufügen',
-      handler: () => {
-        this.shoppingList.push('sword');
+      handler: (values: string) => {
+        this.shoppingList.push(values);
       },
     },
   ];

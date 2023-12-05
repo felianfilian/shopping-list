@@ -70,6 +70,22 @@
         "hash": "13924459389979241635"
       },
       {
+        "file": ".nx/cache/file-map.json",
+        "hash": "2953692607006244602"
+      },
+      {
+        "file": ".nx/cache/lockfile.hash",
+        "hash": "13654044308114605115"
+      },
+      {
+        "file": ".nx/cache/parsed-lock-file.json",
+        "hash": "17274634485562295068"
+      },
+      {
+        "file": ".nx/cache/project-graph.json",
+        "hash": "7656164397271779296"
+      },
+      {
         "file": ".vscode/extensions.json",
         "hash": "9820145720478233062"
       },
@@ -143,11 +159,11 @@
       },
       {
         "file": "src/app/home/home.page.html",
-        "hash": "5398836310047677551"
+        "hash": "3957094126935425084"
       },
       {
         "file": "src/app/home/home.page.scss",
-        "hash": "3244421341483603138"
+        "hash": "2633683919844443346"
       },
       {
         "file": "src/app/home/home.page.spec.ts",
@@ -155,7 +171,7 @@
       },
       {
         "file": "src/app/home/home.page.ts",
-        "hash": "10927110708067941400"
+        "hash": "13857178356424974447"
       },
       {
         "file": "src/app/message/message.component.html",

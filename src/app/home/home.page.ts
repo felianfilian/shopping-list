@@ -10,13 +10,19 @@ import { DataService, Message } from '../services/data.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  shoppingList = ['Milch', 'Eier', 'Zimt'];
+  shoppingList: string[];
+
+  constructor() {
+    const storedItems = localStorage.getItem('items');
+    this.shoppingList = storedItems ? JSON.parse(storedItems) : [];
+  }
 
   public alertButtons = [
     {
       text: 'Hinzufügen',
       handler: (data: { value: string }) => {
         this.shoppingList.push(data.value);
+        this.save();
       },
     },
   ];

@@ -15,17 +15,23 @@ export class HomePage {
   public alertButtons = [
     {
       text: 'Hinzufügen',
-      handler: (values: string) => {
-        this.shoppingList.push(values);
+      handler: (data: { value: string }) => {
+        this.shoppingList.push(data.value);
       },
     },
   ];
   public alertInputs = [
     {
+      name: 'value',
       placeholder: 'Artikel (max 30 Zeichen)',
       attributes: {
         maxlength: 30,
       },
     },
   ];
+
+  save() {
+    let itemsText = JSON.stringify(this.shoppingList);
+    localStorage.setItem('items', itemsText);
+  }
 }
